@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image:url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0");
+    background-size:cover;
+    background-attachment:fixed;
+    border:8px solid greenyellow;
+    min-height:100vh;
+}
+
+/* Header */
+
+#heading{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:20px;
+}
+
+#heading-1,
+#heading-2,
+#heading-3{
+    background:black;
+    color:white;
+    border:5px solid red;
+    border-radius:30px;
+    font-style:italic;
+    font-weight:bold;
+}
+
+#heading-1{
+    width:320px;
+    padding:15px;
+    text-align:center;
+    font-size:20px;
+}
+
+#heading-2{
+    width:450px;
+    padding:35px;
+    text-align:center;
+    margin-top:20px;
+    font-size:22px;
+}
+
+#heading-3{
+    width:320px;
+    padding:15px;
+    text-align:center;
+    font-size:18px;
+}
+
+.h1,.h2,.h3{
+    margin:8px 0;
+}
+
+/* Offer + Form */
+
+#excoffer{
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    margin-top:40px;
+}
+
+/* Offer Circle */
+
+#offer{
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:#4deaff;
+    border:2px solid gray;
+    text-align:center;
+    padding:90px 30px;
+    margin-top:180px;
+}
+
+.p1,
+.p2,
+.p3{
+    font-weight:bold;
+    font-style:italic;
+    text-decoration:underline;
+    margin:20px 0;
+    font-size:22px;
+}
+
+/* Registration Form */
+
+#regoffer{
+    width:470px;
+    border:5px dashed red;
+    text-align:center;
+    padding:20px;
+}
+
+#regh1{
+    color:red;
+    margin-bottom:15px;
+}
+
+.form-details{
+    color:red;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.details,
+.date{
+    width:180px;
+    height:25px;
+    text-align:center;
+}
+
+#click,
+#reset{
+    padding:5px 10px;
+}
+
+/* Menu Heading */
+
+#menu{
+    width:420px;
+    margin:40px auto;
+    background:black;
+    color:white;
+    border:5px solid red;
+    border-radius:30px;
+    text-align:center;
+    padding:25px;
+    font-size:40px;
+    font-style:italic;
+    font-weight:bold;
+}
+
+/* Food Boxes */
+
+.menu1,
+.menu2{
+    display:flex;
+    justify-content:space-evenly;
+    margin:40px 0;
+}
+
+.box1,
+.box2{
+    width:320px;
+    background:#44f2ff;
+    border:2px solid green;
+    border-radius:25px;
+    text-align:center;
+    padding:20px;
+}
+
+.food{
+    color:darkblue;
+    margin-bottom:10px;
+}
+
+ul{
+    margin-top:15px;
+    padding-left:30px;
+    text-align:left;
+}
+
+li{
+    margin:8px 0;
+    font-size:20px;
+}
+
+/* Responsive */
+
+@media(max-width:1000px){
+
+    #heading,
+    #excoffer,
+    .menu1,
+    .menu2{
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    #heading-2{
+        width:320px;
+    }
+
+    .box1,
+    .box2{
+        width:90%;
+    }
+
+    #offer{
+        margin-top:20px;
+    }
+}
